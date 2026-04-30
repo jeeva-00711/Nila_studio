@@ -1,0 +1,16 @@
+{% extends "press/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="wedding-slider">
+  <div class="w-slide active"><img src="{% static 'images/b1.jpg' %}"></div>
+  <div class="w-slide"><img src="{% static 'images/b2.jpg' %}"></div>
+  <div class="w-slide"><img src="{% static 'images/b3.jpg' %}"></div>
+</div>
+
+<div class="w-controls">
+  <button onclick="wPrev()">❮</button>
+  <button onclick="wNext()">❯</button>
+</div>
+
+{% endblock %}

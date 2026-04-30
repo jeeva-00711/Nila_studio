@@ -1,0 +1,22 @@
+{% load static %}
+
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="{% static 'images/logo.jpg' %}" alt="logo" id="lo_go">
+        <span>Nila Studio</span>
+
+    </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <div class="nav-right" id="nav-links">
+        <a href="{% url 'press:main' %}">Home</a>
+        <a href="{% url 'press:project' %}">Works</a>
+        <a href="{% url 'press:about' %}">About</a>
+
+    </div>
+
+</nav>

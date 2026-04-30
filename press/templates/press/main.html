@@ -1,0 +1,72 @@
+{% extends 'press/base.html' %}
+{% load static %}
+{% block content %}
+<!-- slider -->
+<div class="slider">
+    <div class="slide active">
+        <img src="{% static 'images/d1.jpg' %}">
+    </div>
+    <div class="slide">
+        <img src="{% static 'images/s2.jpg' %}">
+    </div>
+    <div class="slide">
+        <img src="{% static 'images/d2.jpg' %}">
+    </div>
+    <div class="slide">
+        <img src="{% static 'images/d3.jpg' %}">
+    </div>
+</div>
+
+<div>
+    <h1 id="qut">Capture moments, not things<br> . . . </h1>
+</div>
+
+<div class="summar ">
+    <div class="nil">
+        <img src="{% static 'images/n1.jpg' %}">
+    </div>
+    <div class="sum">
+        <p>“We capture timeless wedding moments with a perfect blend of traditional elegance and candid storytelling.
+            Every emotion, every smile, and every ritual is preserved beautifully to create memories that last forever.”
+        </p>
+    </div>
+
+
+</div>
+<div class="summar1" container>
+    <div class="row align-items-center">
+
+        <div class="sum1 col-12 col-sm-12 col-md-6 col-lg-6">
+            <p>
+                “Every wedding tells a unique love story, and we are here to capture it in its purest form. From
+                emotional rituals to joyful celebrations, our photography blends tradition with candid
+                storytelling—turning moments into timeless memories.”
+            </p>
+        </div>
+
+        <div class="nil1 col-12 col-sm-12 col-md-6 col-lg-6">
+            <img src="{% static 'images/n2.jpg' %}" class="img-fluid" alt="">
+        </div>
+
+    </div>
+</div>
+
+<div class="pro container">
+    <div class="row align-items-center justify-content-center">
+
+        <div class="wed col-6 col-sm-6 col-md-4 col-lg-4">
+            <a href="{% url 'press:project' %}">
+                <img src="{% static 'images/w1.jpg' %}" class="img-fluid" alt="#">
+            </a>
+        </div>
+
+
+    </div>
+    <div class="row align-items-center justify-content-center ">
+        <div class="arrow col-12 col-sm-3 col-md-4 col-lg-1 ">
+            <img src="{% static 'images/ar.png' %}" alt="#">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

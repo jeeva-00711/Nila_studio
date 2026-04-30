@@ -1,0 +1,71 @@
+{% extends "press/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="image container mt-5 mb-5">
+    <!-- <div class="we_ph row g-2 g-sm-3 g-md-5 g-lg-1">
+        <div class="box1 col-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="#">
+            <img src="{% static 'images/we1.jpg' %}" class="img-fluid" alt="#"><br>
+            <h1>Wedding Shoot</h1>
+            </a>
+        </div>
+        <div class="box2 col-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="#">
+            <img src="{% static 'images/c1.jpg' %}" class="img-fluid" alt="#"><br>
+            <h1>Outdoor Shoot</h1>
+            </a>
+        </div>
+
+    </div> -->
+    
+    <div class="image container">
+        <div class="we_ph row g-4">
+
+            <div class="col-12 col-md-6">
+                <div class="box1 p-3">
+                    <a href="{% url 'press:wedding' %}">
+                        <img src="{% static 'images/we1.jpg' %}" class="img-fluid" alt="#">
+                        <h1>Wedding Shoot</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="box2 p-3">
+                    <a href="{% url 'press:candid' %}">
+                        <img src="{% static 'images/c1.jpg' %}" class="img-fluid" alt="#">
+                        <h1>Outdoor Shoot</h1>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="we_ph1 row g-4">
+
+            <div class="col-12 col-md-6">
+                <div class="box1 p-3">
+                    <a href="{% url 'press:birth' %}">
+                        <img src="{% static 'images/b1.jpg' %}" class="img-fluid" alt="#">
+                        <h1>Birthday Shoot</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="box2 p-3">
+                    <a href="{% url 'press:thiruvizha' %}">
+                        <img src="{% static 'images/t1.jpg' %}" class="img-fluid" alt="#">
+                        <h1>Thiruvizha Shoot</h1>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
